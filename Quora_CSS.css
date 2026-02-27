@@ -14,6 +14,17 @@ body{
     background-color: ghostwhite;
 }
 
+.logo{
+    font-size: 24px;
+    margin: 0;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.header-left{
+    flex: 0 1 auto;
+}
+
 .main-header{
 
     display: flex;
@@ -46,12 +57,19 @@ body{
 
 
 .search-bar{
-    width: 400px;
+    width: 100%;
     padding: 10px 20px;
     background-color: #F0F2F5;
     border: none;
     border-radius: 20px;
     font-family: 'Segoe UI', sans-serif;
+    max-width: 450px;
+}
+
+.search-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .profile-pic{
@@ -63,7 +81,25 @@ body{
 
 }
 
+.feed input{
+    width: 590px;
+    height: 50px;
+    border-radius: 11px;
+    color: #f3f2f2;
 
+}
+.feed input:hover{
+    background-color: #c5c5c5;
+}
+
+.post-button{
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: #b92b27;
+    border-radius: 5px;
+    color: white;
+}
 
 
 .card{
@@ -98,12 +134,79 @@ body{
 }
 
 .icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    max-width: 10px;
+    max-height: 10px;
+}
+
+.action-bar{
+    display: flex;
+    background-color: #242526;
+    border-radius: 8px;
+    padding: 10px 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 2px auto;
+    margin-top: 9px;
     
 }
 
+.action-button{
+    flex: 1;
+    background: none;
+    border: none;
+    color: #E0E0E0;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-bar-cover{
+    display: flex;
+    align-items: center;
+    background-color: #F0F2F5;
+    border-radius: 20px;
+    padding: 5px 15px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.search-input{
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-family: 'Segoe UI',  sans-serif;
+    padding: 8px 0;
+}
+.search-icon{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    opacity: 0.6;
+}
 
 
+.action-button:hover{
+    background-color: #3a3b3c;
+    border-radius: 4px;
 
+}
+.separator{
+    width: 1px;
+    background-color: #3e4042;
+    height: 24px;
+    align-self: center;
+}
 
 @media (max-width: 768px){
     .app-container{
@@ -112,4 +215,4 @@ body{
     .sidebar, .info-panel {
         display: none;
     }
-}
+ }

@@ -16,12 +16,14 @@
         <header class="main-header">
 
             <div class="header-left">
-                <h1 class="logo">connected</h1>
+                <h1 class="logo">Quora</h1>
             </div>
 
             <div class="search-container">
-            <i class="search-icon"><img src="img/icons/search.svg" alt="search icon"></i>
-            <input type="text" placeholder="Type in search" class="search-bar">
+                <div class="search-bar-cover">
+                    <i class="search-icon"><img src="img/icons/search.svg" alt="search icon"></i>
+                    <input type="text" placeholder="Type in search" class="search-input">
+                </div>
             </div>
 
             <div class="user-profile-group">
@@ -44,9 +46,31 @@
             </nav>
 
             <main class="feed">
-                <h2 class="post-box">Feed</h2>
-                <input type="text" placeholder="Whats on your mind">
-                <button>Post</button>
+                
+                <input type="text" placeholder="What do you want to Ask or Share?">
+
+                <div class="action-bar">
+                    <button class="action-button">
+                        <span class="icon">&#x2754;</span>
+                        <span>Ask</span>
+
+                    </button>
+
+                    <div class="separator"></div>
+
+                    <button class="action-button">
+                        <span class="icon">&#x1F4C4;</span>
+                        <span>Answer</span>
+                    </button>
+
+                    <div class="separator"></div>
+
+                    <button class="action-button">
+                        <span class="icon">✎</span>
+                        <span>Post</span>
+                    </button>
+
+                </div>
 
                 <div class="card">
                     <div class="card-header">Robert Hammond</div>
