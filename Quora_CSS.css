@@ -44,6 +44,14 @@ body {
   color: #5b7cfd;
 }
 
+
+
+
+
+
+
+
+
 .icon-left {
   display: flex;
   align-items: center;
@@ -423,6 +431,40 @@ body .other-pfp {
   cursor: pointer;
 }
 
+.video-description{
+  flex: 1;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  height: fit-content;
+  max-width: 300px;
+}
+
+
+.video-description h3{
+  margin-top: 0;
+  color: #b92b27;
+  
+}
+
+.video-description.author{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .video-section {
   position: relative;
   z-index: 10;
@@ -473,6 +515,13 @@ body .other-pfp {
   z-index: 2;
   mix-blend-mode: screen;
 }
+
+
+.tags{
+  color: #00000048;
+}
+
+
 
 .action-btn2 {
   width: 50px;
